@@ -23,8 +23,10 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $image = $this->faker->image('public/images/users', 640, 480);
         return [
             'name' => fake()->name(),
+            'image' => str_replace('public', '', $image),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
