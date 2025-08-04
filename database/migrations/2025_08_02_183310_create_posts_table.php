@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('thumb');
             $table->text('content');
             $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreignId('category_id')->references('id')->on('categories')->onDelete('set null')->nullable();
             $table->timestamps();
         });
     }
