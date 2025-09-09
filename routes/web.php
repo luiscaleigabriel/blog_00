@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,4 @@ Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('l
 /**
  * Rotas Administrativas
  */
-Route::get('/dashboard', );
+Route::get('/dashboard', [DashController::class, 'index'])->name('dashboard');

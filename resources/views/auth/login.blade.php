@@ -45,6 +45,8 @@
                     {{ __('Entrar') }}
                 </x-primary-button>
             </div>
+
+            <span>Ainda não tem uma conta?><a href="#">Criar</a></span>
         </div>
     </form>
 </x-guest-layout>
