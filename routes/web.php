@@ -13,3 +13,4 @@ Route::get('/', function () {
  */
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login');
