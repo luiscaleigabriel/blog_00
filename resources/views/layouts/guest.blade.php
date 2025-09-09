@@ -13,15 +13,17 @@
 </head>
 
 <body class="form-auth-main" style="background-image: url(./assets/fundo-login.png)">
-    <div class="">
-        <div>
-            <a href="/">
-                <img src="{{ asset('assets/logo.png') }}" alt="">
-            </a>
-        </div>
+    <div class="form-auth-content">
+        <div class="form-auth-content--c">
+            <div class="logo-main">
+                <a href="/">
+                    <img class="logo-form" src="{{ asset('assets/logo.png') }}" alt="">
+                </a>
+            </div>
 
-        <div class="form-auth-content">
-            {{ $slot }}
+            <div class="form-auth-content-form">
+                {{ $slot }}
+            </div>
         </div>
     </div>
 </body>
