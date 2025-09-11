@@ -10,6 +10,7 @@
     color: red;
 }
 
+
 /* ====== Form Login ======*/
 .logo-main {
     text-align: center;
@@ -65,4 +66,11 @@
 .form-control.input-transparent:focus {
     background-color: #f5f5f566;
     box-shadow: 0 0 10px var(--gold-light);
+}
+
+/*====== Dashboard  ======*/
+.dash-main {
+    height: 100dvh;
+    width: 100dvw;
+    overflow: auto;
 }

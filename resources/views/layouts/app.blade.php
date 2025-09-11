@@ -11,11 +11,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
-        <div class="d-flex flex-nowrap">
+        <div class="d-flex dash-main">
             @include('layouts.navigation')
-
-            <!-- Page Heading -->
-            
 
             <!-- Page Content -->
             <main>
