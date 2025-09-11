@@ -46,7 +46,7 @@
                 </x-primary-button>
             </div>
 
-            <span>Ainda não tem uma conta?><a href="#">Criar</a></span>
+            <span class="d-inline-block mt-2">Ainda não tem uma conta? <a style="text-decoration: none;" href="#">Criar</a></span>
         </div>
     </form>
 </x-guest-layout>
